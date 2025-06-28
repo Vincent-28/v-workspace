@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first website</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free HTML tutorial for beginners">
+    <meta name="keywords" content="HTML, tutorial, beginners">
+    <meta name="author" content="Vincent Sang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="refresh" content="30">-->
+  </head>
+  <body style="background-color: #ada384">
+
+    <header style="background-color:#6203fc">
+      <h1>Welcome to my Website</h1>
+      <a hred="">Home</a>
+      <a hred="">About Us</a>
+      <a hred="">Products</a>
+      <a hred="">Contact Us</a>
+      <hr>
+    </header>
+
+    <main>
+      <h4>Check out these cool moves:</h4>
+      <img src="images.jpeg" alt="profile pic">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dolorum, nulla commodi voluptatibus voluptatem a distinctio facilis, sint consequuntur sequi obcaecati itaque tenetur reiciendis veniam et suscipit. Possimus, id similique.</p>
+    </main>
+
+    <div align="center">
+      <h1 style="color: red">Color</h1>
+      <h1 style="color:rgb(98, 3, 252)">Hello</h1>
+      <h1 style="color: #6203fc">Color</h1>
+      <a href="mailto:photastegood123@gmail.com" target="_blank" title="This takes you to page 2">
+        email me
+      </a>
+      <br>
+      <a href="https://rusticreddoor.com/products/hawthorne-oak-dining-chair" target="_blank">
+        <img src="images/chair.png" height="300" alt="This is a picture of a chair" title="This chair is wooden">
+      </a>
+      <br>
+      <audio controls autoplay mute loop>
+        <source src="Monthaholic - Schwartzy.mp3">
+        <source src="Monthaholic - Schwartzy.wav">
+        This browser does not support HTML5 audio
+      </audio>
+      <br>
+      <video controls loop width="500">
+        <source src="vid.mp4">
+        This browser does not support mp5 file
+      </video>
+      <br>
+      <p style="background-color:rgb(98, 3, 252); color: #84fc03">This is normal text</p>
+      <p>This is <b>bold</b> text</p>
+      <p>This is <i>italic</i> text</p>
+      <p>This is <big>big</big> text</p>
+      <p>This is <small>small</small> text</p>
+      <p>This is <sub>subscript</sub> text</p>
+      <p>This is <sup>superscript</sup> text</p>
+      <p>This is <ins>inserted</ins> text</p>
+      <p>This is <del>deleted</del> text</p>
+      <p>This is <mark>marked</mark> text</p>
+      <br>
+      <h4>Unordered List</h4>
+      <ul>
+        <li>pizza dough</li>
+        <li>tomato sauce</li>
+        <li>cheese</li>
+        <li>toppings</li>
+      </ul>
+      <p>
+        <span style="color: red">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span> Earum explicabo asperiores exercitationem. Ullam exercitationem necessitatibus nisi? Accusantium omnis dolore ab exercitationem. Voluptas in tempore dolorum itaque? Iste accusantium quam reiciendis.
+      </p>
+      <div style="background-color: #34eb5e">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id in saepe explicabo magni quis ab. Neque, saepe! Molestias dignissimos quo obcaecati dolore eligendi iure id porro aliquid excepturi voluptates.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam vel doloremque quasi accusamus? Cumque vitae, accusamus facere ullam quae dolorum libero ipsum explicabo exercitationem iusto cum rem quisquam molestias labore?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ab dicta ducimus dolores eveniet unde sapiente doloremque corrupti veniam expedita ea, dolore commodi ipsam. Nulla nostrum error natus eaque officia.
+        </p>
+      </div>
+      <iframe style="border: 0" src="ad.html" width="500" height="500">
+      </iframe>
+
+      <br>
+
+      <button onclick="doSomething()" style = "background-color:#333333; color:#00FF00; border-radius:5px; width:200px; height:200px; font-size:50px">click me</button>
+      <p id="test">Hello</p>
+      <script>
+        function doSomething(){
+          document.getElementById("test").innerHTML = "GoodBye"
+        }
+      </script>
+
+      <form action="action_page.php" method="POST">
+        <label for = "fname">first name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Spongebob">
+
+        <br>
+        <br>
+
+        <label for = "lname">last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="LastName">
+
+        <br>
+
+        <div>
+          <label for="pass">password:</label>
+          <input type="password" id="pass" name="pass" maxlength="12" required>
+        </div>
+
+        <br>
+
+        <div>
+          <label for="email">email:</label>
+          <input type="email" id="email" name="email" placeholder="SPants@gmail.com">
+        </div>
+
+        <br>
+
+        <div>
+          <label for="phone">phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+1234567890"
+        </div>
+
+        <br>
+
+        <div>
+          <label for="bdate">birthdate:</label>
+          <input type="date" id="bdate" name="bdate">
+        </div>
+
+        <br>
+
+        <div>
+          <label for="quantity">quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+        </div>
+
+        <br>
+
+        <div>
+          <label for="title">title:</label>
+
+          <label for="Mr.">Mr.</label>
+          <input type="radio" id="Mr." name="title" value="Mr.">
+
+          <label for="Ms.">Ms.</label>
+          <input type="radio" id="Ms." name="title" value="Ms.">
+
+          <label for="PhD.">PhD.</label>
+          <input type="radio" id="PhD." name="title" value="PhD.">
+        </div>
+
+        <br>
+        
+        <div>
+          <label for="payment">payment:</label>
+          <select id="payment" name="payment">
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+          </select>
+        <div>
+
+        <br>
+
+        <div>
+          <label for="checkbox">checkbox:</label>
+          <input type="checkbox" id="checkbox" name="checkbox">
+        </div>
+
+          <input type="reset">
+        </div>
+
+        <br>
+
+        <div>
+          <input type = "submit">
+        </div>
+
+      </form>
+
+    </div>
+
+    <span>
+      hello
+    </span>
+
+    <footer>
+      <hr>
+      author: Vincent Sang
+      <br>
+      &copy; copyright reserved
+      <br>
+      <small><a href="mailto:vincentsang06@gmail.com">vincentsang06@gmail.com</a></small>
+    </footer>
+
+  </body>
+</html>
