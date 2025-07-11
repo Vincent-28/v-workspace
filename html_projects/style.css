@@ -1,0 +1,18 @@
+body{
+    background-color:gray;
+}
+h1{
+    color:black;
+}
+#p1{
+    color:red;
+}
+#p2{
+    color:hotpink;
+}
+.dumb{
+    color:burlywood;
+}
+.even{
+    color:chocolate;
+}
